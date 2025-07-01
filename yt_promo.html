@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam & Tyjae's YouTube Channel Promotion</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #181818; color: #fff; margin: 0; }
+        .main-flex { display: flex; flex-direction: row; max-width: 1100px; margin: 40px auto; }
+        .sidebar {
+            width: 350px;
+            background: #222;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px #0006;
+            padding: 24px 16px;
+            margin-right: 32px;
+            min-width: 250px;
+        }
+        .sidebar h2 { color: #ff0000; font-size: 1.3em; margin-bottom: 18px; text-align: left; }
+        .video-list { display: flex; flex-direction: column; gap: 18px; }
+        .video-list iframe { border-radius: 10px; width: 100%; height: 180px; border: none; }
+        .container {
+            flex: 1;
+            max-width: 500px;
+            background: #232323;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px #0008;
+            padding: 20px;
+            margin: 0 36px 0 24px;
+        }
+        h1 { color: #ff0000; text-align: center; }
+        .creators { text-align: center; margin-bottom: 24px; font-size: 1.2em; }
+        .promo { text-align: center; margin: 32px 0; }
+        .yt-btn {
+            display: inline-block;
+            background: #ff0000;
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #0005;
+            transition: background 0.2s;
+        }
+        .yt-btn:hover { background: #cc0000; }
+        .about { margin-top: 32px; font-size: 1.1em; line-height: 1.6; }
+        .footer { text-align: center; margin-top: 40px; color: #aaa; font-size: 0.95em; }
+        @media (max-width: 900px) {
+            .main-flex { flex-direction: column; }
+            .sidebar { margin-right: 0; margin-bottom: 32px; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar" style="width:100%; background:#181818; display:flex; justify-content:flex-end; align-items:center; padding: 18px 0 10px 0; box-sizing:border-box;">
+        <button class="join-btn" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif; font-size: 1.3em; font-weight: bold; color: #fff; background: #ff0000; border: 3px solid #111; border-radius: 30px; padding: 12px 36px; margin-right: 40px; letter-spacing: 1px; text-shadow: 0 2px 6px #0008; box-shadow: 0 2px 8px #0003; cursor: pointer; outline: none; transition: background 0.2s, color 0.2s;">
+            Join the Family
+        </button>
+    </div>
+    <div class="main-flex" style="position: relative; align-items: flex-start; justify-content: flex-start; margin-left: 20px;">
+        <div class="sidebar">
+            <h2>Latest Videos</h2>
+            <div class="video-list">
+                <!-- Showcased YouTube videos -->
+                <iframe src="https://www.youtube.com/embed/pTOp_DJZx7s" allowfullscreen title="Sam & Tyjae Video 1"></iframe>
+                <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=samandtyjaee" allowfullscreen title="Latest Video 2"></iframe>
+                <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=samandtyjaee" allowfullscreen title="Latest Video 3"></iframe>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Subscribe to Sam & Tyjae!</h1>
+            <div class="creators">Creators: <b>Sam</b> & <b>Tyjae</b></div>
+            <div style="text-align:center; margin-bottom:24px;">
+                <img src="Sam and tyjae.png" alt="Two men, one in a red jacket standing beside a red sports car and another in a pink tracksuit sitting on a black sports car, both holding cameras, with a city street background and bold yellow text SAM & TYJAE in the center, tire skid marks on the road, and a lively, energetic atmosphere" style="max-width: 600px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px #0007; margin-top: 16px;" />
+            </div>
+            <div class="promo">
+                <p>Welcome to our official YouTube channel promotion page!<br>
+                We create awesome content, fun challenges, and more. Join our community and never miss an update!</p>
+                <a class="yt-btn" href="https://www.youtube.com/@samandtyjaee/videos" target="_blank">Subscribe on YouTube</a>
+            </div>
+            <div class="about">
+                <h2>About Our Channel</h2>
+                <p>Sam & Tyjae are passionate creators who love sharing their adventures, tips, and entertainment with the world. Whether it's vlogs, tutorials, or live streams, there's always something new and exciting on our channel. <br><br>
+                Hit the subscribe button and become part of the family!</p>
+            </div>
+        </div>
+        <div class="clipsbar" style="width: 350px; background: #222; border-radius: 12px; box-shadow: 0 4px 24px #0006; padding: 24px 16px; min-width: 250px; display: flex; flex-direction: column; position: fixed; right: 0; top: 40px; height: fit-content; z-index: 10;">
+            <h2 style="color:#ffb300; font-size: 1.3em; margin-bottom: 18px; text-align: left;">Top Clips</h2>
+            <div class="clip-list" style="display: flex; flex-direction: column; gap: 18px;">
+                <video controls style="border-radius: 10px; width: 100%; height: 180px; border: none; background: #111;">
+                    <source src="clip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Add more clips here if needed -->
+            </div>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 Sam & Tyjae. All rights reserved.</div>
+</body>
+</html>
